@@ -7,22 +7,21 @@
   <meta name="description" content="HTML example of website by Abdugaffar Kutbiddinov">
 </head>
 <body>
-<header>
-    <div id="top-header">
+<header='top_header'>
         <div id="logo">
             ABDu
         </div>
         <nav>
             <ul>
-                <li class="active"><a href="#">Контакты</a></li>
-                <li><a href="#">О приложении</a></li>
+                <li class="active"><a href="#about_me">Контакты</a></li>
+                <li><a href="#app">О приложении</a></li>
             </ul>
         </nav>
-    </div>
 </header>
   <main>
+    <h1>Визитная карта<h1>
     <section>
-      <h1>Про меня</h1>
+      <h2 id=about_me>Про меня</h2>
       <div id="image1">
         <img src="images/photo.jpg" />
        </div>
@@ -34,7 +33,7 @@
       </p>
       </section>
       <section>
-        <h1>Мои споспобности</h>
+        <h2 id=app>Мои споспобности</h2>
       <ul>
         <li> Знание 4 языков (Английский, Русский,Узбекский,Таджикский)</li>
         <li> Мобильные разработки (Flutter, Firebase, Kotlin) </li>
@@ -51,8 +50,9 @@
            <cite> Twenty one pilots </cite>
            </blockquote>
        </section>
-       <h1> Моя формула успеха </h1>
-       sin<sup>2</sup>+cos<sup>2</sup>=1</br>
+       <h2> Моя формула успеха </h2>
+       <aside class="my_formula">
+         sin<sup>2</sup>+cos<sup>2</sup>=1</br>
        <pre>
          .--' |
         /___^ |     .--.
@@ -67,17 +67,18 @@
               |||        |||
             //_(       //_(
        </pre>
+       </aside>
   </main>
   <footer>
     <pre><code>var foo = "bar";
       var hello = "world";
       console.log(foo);
       console.log(hello);</code></pre>
-      <h3>follow me on</h3>
+      <p>follow me on</p>
       <div id="image3">
         <img src="images/icon.jpg" />
        </div>
-       <h3>Copyright © 2021 Kutbiddinov Abdugaffar </h3>
+       <p>Copyright © 2021 Kutbiddinov Abdugaffar </p>
   </footer>
 </body>
 </html>
