@@ -50,9 +50,10 @@
 
 
 main {
-  background-color: #008B8B;
+  /* background-color: #008B8B; */
   font-family: 'Comfortaa';
   color: #FFFFFF;
+  background: linear-gradient(#008B8B, #9198e5);
 }
 
 .primary_header {
