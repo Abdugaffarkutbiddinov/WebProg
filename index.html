@@ -2,60 +2,69 @@
 <html lang="ru">
 <head>
   <title>Kutbiddinov Abdugaffar</title>
-  <link href="outline.css" rel="stylesheet">
+  <link rel="stylesheet" href="CSS/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Play&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
   <meta charset="utf-8">
   <meta name="description" content="HTML example of website by Abdugaffar Kutbiddinov">
 </head>
-<body>
-<header id='top_header'>
-        <div id="logo">
-            ABDu
+<body class="body">
+<header class="main_header" id='top_header'>
+        <div class="logo" id="logo">
+            <h1> ABDu </h1>
         </div>
-        <nav>
+          <nav class="nav">
             <ul>
-                <li class="active"><a href="#about_me">Контакты</a></li>
+                <li><a href="#about_me">Контакты</a></li>
                 <li><a href="#app">О приложении</a></li>
-            </ul>
-        </nav>
+              </ul>
+              </nav>
 </header>
   <main>
-    <h1>Визитная карта</h1>
-    <section>
-      <h2 id=about_me>Про меня</h2>
-      <div id="image1">
+    <h1 class="primary_header">Визитная карта</h1>
+    <section class="about_me_section">
+      <h2 class="about_me_header" id=about_me>Про меня</h2>
+      <div class="section_no_header">
+      <div class="about_me_image" id="image1">
         <img src="images/photo.jpg" />
        </div>
-      <p>
+      <p class="about_me_p">
         Привет, я Абдугаффар.
         Очень хочу стать программистом и зарабатывать деньги на этом.
         На данный момент изучаю мобильные разработки. В основном это Flutter.
         Так же хотел бы попасть в сферу Digital Arts
       </p>
+    </div>
       </section>
-      <section>
-        <h2 id=app>Мои споспобности</h2>
-      <ul>
-        <li> Знание 4 языков (Английский, Русский,Узбекский,Таджикский)</li>
-        <li> Мобильные разработки (Flutter, Firebase, Kotlin) </li>
-       <li> умею готовить (Настоящий узбекский плов) </li>
+      <section class="my_skills">
+        <h2 class="my_skills_header"id=app>Мои споспобности</h2>
+        <div class="section_no_header">
+      <ul class="my_skills_list">
+        <li class="my_skills_li"> Знание 4 языков (Английский, Русский,Узбекский,Таджикский)</li>
+        <li class="my_skills_li"> Мобильные разработки (Flutter, Firebase, Kotlin) </li>
+        <li class="my_skills_li"> Умею готовить (Настоящий узбекский плов) </li>
+
      </ul>
-      <div id="image2">
+      <div class="my_skills_image" id="image2">
         <img src="images/plov.jpg" />
        </div>
+     </div>
        </section>
-       <section>
-         <h1>Мой девиз</h1>
-         <blockquote>
-           <p> Wake up, you need to make money,yeah</p>
-           <cite> Twenty one pilots </cite>
+       <section class="my_motto">
+         <h1 class="my_motto_header">Мой девиз</h1>
+         <blockquote class="my_motto_quote">
+           <p class="my_motto_text"> Wake up, you need to make money,yeah</p>
+           <cite class="my_motto_author"> -Twenty one pilots </cite>
            </blockquote>
        </section>
-       <aside class="my_formula">
-         <h2> Моя формула успеха </h2>
-         <p>
+       <!-- <aside class="my_formula">
+         <h2 class="my_formula_header"> Моя формула успеха </h2>
+         <p class="my_formula_text">
          sin<sup>2</sup>+cos<sup>2</sup>=1</br>
        </p>
-       <pre>
+       <pre class="ascii_image">
          .--' |
         /___^ |     .--.
             ) |    /    \
@@ -69,18 +78,20 @@
               |||        |||
             //_(       //_(
        </pre>
-       </aside>
+       </aside> -->
   </main>
-  <footer>
-    <pre><code>var foo = "bar";
+  <footer class="footer">
+    <!-- <pre><code>var foo = "bar";
       var hello = "world";
       console.log(foo);
-      console.log(hello);</code></pre>
-      <p>follow me on</p>
-      <div id="image3">
-        <img src="images/icon.jpg" />
+      console.log(hello);</code></pre> -->
+      <div class="footer_content">
+        <p class="footer_text">follow me on</p>
+      <div class="contact_icon" id="image3">
+        <img class="contact_image"src="images/icon.jpg" />
        </div>
-       <p>Copyright © 2021 Kutbiddinov Abdugaffar </p>
+       <p class="copyright_info">Copyright © 2021 Kutbiddinov Abdugaffar </p>
+     </div>
   </footer>
 </body>
 </html>

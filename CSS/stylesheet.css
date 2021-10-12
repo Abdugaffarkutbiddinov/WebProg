@@ -1,0 +1,156 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+.main_header {
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+
+.logo {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 20px;
+}
+.logo h1{
+  color: #008B8B;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: 'Patrick Hand';
+  font-size: 32px;
+}
+.nav {
+  height: 100px;
+ }
+
+ .nav ul {
+   float: right;
+   margin-right: 10px;
+ }
+ .nav ul li {
+   display: inline-block;
+   line-height: 60px;
+   margin: 30px 5px;
+ }
+
+ .nav ul li a {
+   color: #008B8B;
+   font-size: 13px;
+   text-transform: uppercase;
+   font-family: 'Play';
+
+ }
+
+
+main {
+  background-color: #008B8B;
+  font-family: 'Comfortaa';
+  color: #FFFFFF;
+}
+
+.primary_header {
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.about_me_section {
+  padding: 20px;
+  margin-left: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.section_no_header{
+  display: flex;
+  justify-content: space-between;
+}
+.about_me_image {
+  padding: 50px 8px 20px;
+}
+img {
+  border-radius: 20%;
+
+}
+
+.about_me_p {
+  float: right;
+  padding: 50px 8px 20px;
+  text-align: left;
+  word-spacing: 3px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 32px;
+}
+
+.my_skills {
+  padding: 20px;
+  margin-left: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.my_skills_image {
+  padding: 50px 8px 20px;
+}
+
+.my_skills_list {
+  list-style: square;
+  float: right;
+  padding: 50px 8px 20px;
+  text-align: left;
+  word-spacing: 3px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  line-height: 32px;
+}
+
+.my_motto {
+  padding: 20px;
+  margin-left: 20px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.my_motto_quote {
+  padding: 50px 8px 20px;
+}
+.my_motto_text {
+  font-size: 28px;
+}
+.my_motto_author {
+  padding: 30px 8px 20px;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.footer_text {
+  font-size: 20px;
+  font-family: 'Playball';
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+
+
+}
+.contact_image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+.footer_content {
+
+    display: table;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+}
+.footer {
+  background-color: #3A3B3C;
+}
