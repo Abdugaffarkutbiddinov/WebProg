@@ -146,12 +146,13 @@ img {
     object-fit: contain;
 }
 .footer_content {
-
     display: table;
-      text-align: center;
-      margin-left: auto;
-      margin-right: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer {
-  background-color: #3A3B3C;
+  background: linear-gradient(#9198e5, #3A3B3C);
+  /* background-color: #3A3B3C; */
+  color: white;
 }
