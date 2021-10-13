@@ -1,16 +1,17 @@
 
-*{
+body{
   margin: 0;
   padding: 0;
-  list-style: none;
-  text-decoration: none;
   box-sizing: border-box;
 }
-.main_header {
+.main-header {
   width: 100%;
-  height: 80px;
+  height: 100px;
   display: block;
+  /* box-shadow: 5px 5px 5px grey; */
+  /* text-shadow: 2px 2px 4px #008B8B; */
 }
+
 
 .logo {
   height: 100%;
@@ -23,11 +24,11 @@
   height: 100%;
   display: table-cell;
   vertical-align: middle;
-  font-family: 'Patrick Hand';
+  font-family: 'Patrick Hand','Arial';
   font-size: 32px;
 }
 .nav {
-  height: 100px;
+  height: 100%;
  }
 
  .nav ul {
@@ -37,43 +38,44 @@
  .nav ul li {
    display: inline-block;
    line-height: 60px;
-   margin: 30px 5px;
+   margin: 50px 5px;
  }
 
  .nav ul li a {
    color: #008B8B;
    font-size: 13px;
    text-transform: uppercase;
-   font-family: 'Play';
+   font-family: 'Play','Arial';
+   text-decoration: none;
 
  }
 
 
 main {
   /* background-color: #008B8B; */
-  font-family: 'Comfortaa';
+  font-family: 'Comfortaa','Arial';
   color: #FFFFFF;
   background: linear-gradient(#008B8B, #9198e5);
 }
 
-.primary_header {
+.primary-header {
   padding: 20px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.about_me_section {
+.about-me-section {
   padding: 20px;
   margin-left: 20px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.section_no_header{
+.section-no-header{
   display: flex;
   justify-content: space-between;
 }
-.about_me_image {
+.about-me-image {
   padding: 50px 8px 20px;
 }
 img {
@@ -81,7 +83,7 @@ img {
 
 }
 
-.about_me_p {
+.about-me-p {
   float: right;
   padding: 50px 8px 20px;
   text-align: left;
@@ -91,19 +93,19 @@ img {
   line-height: 32px;
 }
 
-.my_skills {
+.my-skills {
   padding: 20px;
   margin-left: 20px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.my_skills_image {
+.my-skills-image {
   padding: 50px 8px 20px;
 }
 
-.my_skills_list {
-  list-style: square;
+.my-skills-list {
+  list-style: circle;
   float: right;
   padding: 50px 8px 20px;
   text-align: left;
@@ -113,39 +115,40 @@ img {
   line-height: 32px;
 }
 
-.my_motto {
+.my-motto {
   padding: 20px;
   margin-left: 20px;
   color: white;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.my_motto_quote {
+.my-motto-quote {
   padding: 50px 8px 20px;
+  font-style:italic;
 }
-.my_motto_text {
+.my-motto-text {
   font-size: 28px;
 }
-.my_motto_author {
+.my-motto-author {
   padding: 30px 8px 20px;
   font-size: 20px;
   margin-top: 30px;
 }
 
-.footer_text {
+.footer-text {
   font-size: 20px;
-  font-family: 'Playball';
+  font-family: 'Playball','Arial';
   color: white;
   text-shadow: 2px 2px 4px #000000;
 
 
 }
-.contact_image {
+.contact-image {
     width: 100px;
     height: 100px;
     object-fit: contain;
 }
-.footer_content {
+.footer-content {
     display: table;
     text-align: center;
     margin-left: auto;
@@ -153,6 +156,5 @@ img {
 }
 .footer {
   background: linear-gradient(#9198e5, #3A3B3C);
-  /* background-color: #3A3B3C; */
   color: white;
 }
