@@ -208,11 +208,52 @@ img {
     overflow: scroll;
     overflow-y: hidden;
   }
+  img {
+    width: 100%;
+    padding-left: 1%;
+    padding-top: 0;
+  }
+  .about-me-image, .my-skills-image {
+    justify-content: center;
+  }
+  .section-no-header {
+    display: block;
+  }
+  .my-skills-list {
+    float: left;
+  }
+
+
 }
 
 @media screen and (max-width: 375px) {
   .about-me-image, .my-skills-image {
     display: none;
+  }
+  .my-skills-list, .about-me-p {
+    font-size: 0.8rem;
+  }
+  .about-me-header, .my-skills-header, .my-motto-header {
+    font-size: 1rem;
+  }
+  .my-motto-text {
+    font-size: 1rem;
+  }
+  .my-motto-author {
+    font-size: 0.8rem;
+  }
+  .nav ul li a {
+    font-size: 0.8rem;
+  }
+
+}
+
+@media screen and (max-width: 683px) {
+  .my-motto-text {
+    font-size: 1.5rem;
+  }
+  .my-motto-author {
+    font-size: 1rem;
   }
 }
 .footer-text {
