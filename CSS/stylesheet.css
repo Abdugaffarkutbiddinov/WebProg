@@ -14,10 +14,8 @@ body{
 
 
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: stretch;
-    align-content: stretch; */
+    flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
     background-color: white;
     box-shadow: 0 0 1rem white;
@@ -28,6 +26,7 @@ body{
     left: 0;
     right: 0;
     z-index: 3;
+    align-items: flex-end;
 }
 
 
@@ -44,22 +43,6 @@ body{
   vertical-align: middle;
   font-family: 'Patrick Hand','Arial';
 }
-.nav {
-  /* display: flex;
-  justify-content: right;
-  align-items: stretch;
-  align-content: stretch;
-  flex-wrap: wrap;
-  background-color: white;
-  box-shadow: 0 0 1rem white;
-  padding: 1rem;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 3; */
- }
 
  .nav ul {
    float: right;
@@ -84,6 +67,7 @@ main {
   font-family: 'Comfortaa','Arial';
   color: #FFFFFF;
   background: linear-gradient(#008B8B, #9198E5);
+  padding-top: 5rem;
 }
 
 .primary-header {
@@ -235,7 +219,9 @@ img {
 }
 
 @media screen and (max-width: 375px) {
-  .about-me-image, .my-skills-image, .contact-icon{
+  .about-me-image, .my-skills-image, .
+
+  contact-icon{
     display: none;
   }
   .my-skills-list, .about-me-p {
