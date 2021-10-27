@@ -77,7 +77,6 @@ main {
 }
 
 .about-me-section {
-  padding: 1.5rem;
   margin-left: 1.5rem;
   color: white;
   text-shadow: 0.2rem 0.2rem 0.4rem #000000;
@@ -88,7 +87,7 @@ main {
   justify-content: space-between;
 }
 .about-me-image {
-  padding: 3.5rem 0.6rem 1.5rem;
+  padding: 1rem 0.6rem 1.5rem;
 }
 img {
   border-radius: 10%;
@@ -96,7 +95,7 @@ img {
 
 .about-me-p {
   float: right;
-  padding: 3.5rem 0.6rem 1.5rem;
+  padding: 1rem 0.6rem 1.5rem;
   text-align: left;
   word-spacing: 0.2rem;
   color: white;
@@ -105,7 +104,6 @@ img {
 }
 
 .my-skills {
-  padding: 1.5rem;
   margin-left: 1.5rem;
   color: white;
   text-shadow: 0.2rem 0.2rem 0.4rem #000000;
@@ -118,7 +116,7 @@ img {
 .my-skills-list {
   list-style: circle;
   float: right;
-  padding: 3.5rem 0.6rem 1.5rem;
+  padding: 0.5rem 0.6rem 1.5rem;
   text-align: left;
   word-spacing: 0.2rem;
   color: white;
@@ -127,14 +125,13 @@ img {
 }
 
 .my-motto {
-  padding: 1.5rem;
   margin-left: 1.5rem;
   color: white;
   text-shadow: 0.2rem 0.2rem 0.4rem #000000;
 }
 
 .my-motto-quote {
-  padding: 3.5rem 0.6rem 1.5rem;
+  padding: 0.5rem 0.6rem 1.5rem;
   font-style:italic;
 }
 .my-motto-text {
@@ -196,9 +193,6 @@ img {
     padding-left: 1%;
     padding-top: 0;
   }
-  .about-me-image, .my-skills-image {
-    justify-content: center;
-  }
   .section-no-header {
     display: block;
   }
@@ -217,13 +211,17 @@ img {
     font-size: 1rem;
   }
 }
+@media screen and (max-width: 415px) {
+  main {
+      padding-top: 8rem;
+    }
+}
 
 @media screen and (max-width: 375px) {
-  .about-me-image, .my-skills-image, .
+  .about-me-image, .my-skills-image  {
+        display: none;
+    }
 
-  contact-icon{
-    display: none;
-  }
   .my-skills-list, .about-me-p {
     font-size: 0.8rem;
   }
@@ -238,6 +236,10 @@ img {
   }
   .nav ul li a {
     font-size: 0.8rem;
+  }
+
+  main {
+    padding-top: 9.5rem;
   }
 
 }
