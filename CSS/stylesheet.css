@@ -108,7 +108,6 @@ main {
 }
 img {
   border-radius: 10%;
-
 }
 
 .about-me-p {
@@ -209,7 +208,7 @@ img {
     overflow-y: hidden;
   }
   img {
-    width: 100%;
+    width: 70%;
     padding-left: 1%;
     padding-top: 0;
   }
@@ -226,8 +225,17 @@ img {
 
 }
 
+@media screen and (max-width: 683px) {
+  .my-motto-text {
+    font-size: 1.5rem;
+  }
+  .my-motto-author {
+    font-size: 1rem;
+  }
+}
+
 @media screen and (max-width: 375px) {
-  .about-me-image, .my-skills-image {
+  .about-me-image, .my-skills-image, .contact-icon{
     display: none;
   }
   .my-skills-list, .about-me-p {
@@ -248,14 +256,6 @@ img {
 
 }
 
-@media screen and (max-width: 683px) {
-  .my-motto-text {
-    font-size: 1.5rem;
-  }
-  .my-motto-author {
-    font-size: 1rem;
-  }
-}
 .footer-text {
   /* font-size: 20px; */
   font-family: 'Playball','Arial';
