@@ -38,25 +38,50 @@ body{
   vertical-align: middle;
   font-family: 'Patrick Hand','Arial';
 }
-
+/* 
  .nav ul {
    float: right;
    margin-right: 0.7rem;
  }
  .nav ul li {
    display: inline-block;
-   /* line-height: 4rem; */
+   line-height: 4rem;
    margin-right: 0.4rem;
- }
+ } */
+.nav {
+  
+  /* float: right; */
+  margin-right: 0.7rem;
+  display: inline-block;
+  line-height: 4rem;
+  margin-right: 0.4rem;
+}
 
- .nav ul li a {
+  a {
    color: #008B8B;
    text-transform: uppercase;
    font-family: 'Play','Arial';
    text-decoration: none;
-
+   position: relative;
+   padding-right: 0.5rem;
  }
 
+ a.active {
+   color: black;
+ }
+ a:after {
+   content: '';
+   position: absolute;
+   background-color:  #008B8B;
+   height: 3px;
+   width: 0;
+   left: 0;
+   bottom: -10px;
+   transition: 0.3s;
+ }
+ a:hover::after {
+   width: 100%;
+ }
 
 main {
   font-family: 'Comfortaa','Arial';
@@ -168,7 +193,7 @@ img {
     align-items: center;
     padding: 5%;
   }
-}
+
 
 @media screen and (max-width: 1920px) {
   .table {
@@ -246,6 +271,9 @@ img {
   text-shadow: 0.2rem 0.2rem 0.4rem #000000;
 
 
+}
+.load_time {
+  text-align: center;
 }
 .contact-image {
     width: 7rem;
