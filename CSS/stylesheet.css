@@ -1,6 +1,4 @@
-/* html {
-  font-size: 14px;
-} */
+
 
 body{
   margin: 0;
@@ -38,16 +36,6 @@ body{
   vertical-align: middle;
   font-family: 'Patrick Hand','Arial';
 }
-/* 
- .nav ul {
-   float: right;
-   margin-right: 0.7rem;
- }
- .nav ul li {
-   display: inline-block;
-   line-height: 4rem;
-   margin-right: 0.4rem;
- } */
 .nav {
   
   /* float: right; */
@@ -193,6 +181,36 @@ img {
     align-items: center;
     padding: 5%;
   }
+
+  /*Todo list  */
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+} 
+
+form button {
+  color: #008B8B;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #008B8B;
+  color: white;
+}
+
+
 
 
 @media screen and (max-width: 1920px) {
