@@ -11,23 +11,48 @@
     referrerpolicy="no-referrer" 
     />
     <link rel="stylesheet" href="CSS/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Play&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     <title>ToDo</title>
 </head>
 <body>
-
-    <header>
-        <h1>Todo List</h1>
-    </header>
+    <header class="main-header" id='top-header'>
+        <div class="logo" id="logo">
+            <h1> ABDu </h1>
+        </div>
+          <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#about-me">Contacts</a>
+            <a href="index.html#app">About</a>
+            <a href="calculator.html">Calculator</a>
+            <a href="todo.html">TOdo</a>
+              </nav>
+</header>
+<main>
     <form>
         <input type="text" class="todo-input">
-        <button class="todo-button" type="submit">
+        <button class="todo-button" type="submit" disabled>
             <i class="fas fa-plus-square"></i>
         </button>
     </form>
     <div class="todo-container ">
         <ul class="todo-list"></ul>
     </div>
-
+</main>
+    <footer class="footer">
+        <div class="footer-content">
+          <p class="footer-text">follow me on</p>
+        <div class="contact-icon" id="image3">
+          <img class="contact-image"src="images/icon.jpg" />
+         </div>
+         <p class="copyright-info">Copyright © 2021 Kutbiddinov Abdugaffar </p>
+       </div>
+       <div class="load_time"></div>
+    </footer>
     <script src="scripts/todo.js" type="module"></script>
+    <script src="scripts/currentLocation.js" type="module"></script>
+    <script src="scripts/pageLoadTime.js" type="module"></script>
 </body>
 </html>
