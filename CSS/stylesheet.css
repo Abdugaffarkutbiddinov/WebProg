@@ -248,7 +248,9 @@ form button:hover {
 .complete-btn {
   background: #008B8B;
 }
-
+.todo-item {
+  padding: 0rem, 0.5rem;
+}
 
 @media screen and (max-width: 1920px) {
   .table {
