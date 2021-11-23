@@ -6,13 +6,27 @@ const todoList = document.querySelector(".todo-list");
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', getTodos);
+
+todoInput.addEventListener('input', () => {
+    // todoButton.disabled = !todoInput.value
+    if (todoInput.value.length == 0)
+    { 
+        // todoButton.disabled; 
+        todoButton.disabled = true;
+        console.log("empty");
+    }  	
+    else if(todoInput.value.length != 0) {
+        console.log("empty2");
+        todoButton.disabled = false;
+    }
+});
 todoButton.addEventListener('click',addTodo);
 todoList.addEventListener('click',deleteCheck);
-
 
 // Functions 
 function addTodo(event) {
     event.preventDefault();
+    todoButton.disabled = true;
     // create div
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
