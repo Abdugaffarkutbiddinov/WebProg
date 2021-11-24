@@ -31,9 +31,21 @@
               </nav>
 </header>
 <main>
+    <template id="task">
+        <div class="todo">
+        <li class="todo-item"></li>
+            <button type="button" class="complete-btn">
+                <i class="fas fa-check"></i>
+            </button>
+            <button type="button" class="delete-btn">
+                <i class="fas fa-trash"></i>
+            </button>
+        </div>
+    </template>
+
     <form>
-        <input type="text" class="todo-input">
-        <button class="todo-button" type="submit" disabled>
+        <input type="text" class="todo-input" required>
+        <button class="todo-button" type="submit" >
             <i class="fas fa-plus-square"></i>
         </button>
     </form>
