@@ -2,54 +2,42 @@
 const todoInput = document.querySelector(".todo-input");
 const todoButton = document.querySelector(".todo-button");
 const todoList = document.querySelector(".todo-list");
-
+const template = document.querySelector('#task');
 
 // Event Listeners
 document.addEventListener('DOMContentLoaded', getTodos);
 
-todoInput.addEventListener('input', () => {
-    // todoButton.disabled = !todoInput.value
-    if (todoInput.value.length == 0)
-    { 
-        // todoButton.disabled; 
-        todoButton.disabled = true;
-        console.log("empty");
-    }  	
-    else if(todoInput.value.length != 0) {
-        console.log("empty2");
-        todoButton.disabled = false;
-    }
-});
+// todoInput.addEventListener('input', () => {
+//     // todoButton.disabled = !todoInput.value
+//     if (todoInput.value.length == 0)
+//     { 
+//         // todoButton.disabled; 
+//         todoButton.disabled = true;
+//     }  	
+//     else if(todoInput.value.length != 0) {
+//         todoButton.disabled = false;
+//     }
+// });
 todoButton.addEventListener('click',addTodo);
 todoList.addEventListener('click',deleteCheck);
 
 // Functions 
 function addTodo(event) {
+
     event.preventDefault();
-    todoButton.disabled = true;
-    // create div
-    const todoDiv = document.createElement("div");
-    todoDiv.classList.add("todo");
-    // create li
-    const newTodo = document.createElement('li');
-    newTodo.innerText = todoInput.value;
-    newTodo.classList.add("todo-item");
-    todoDiv.appendChild(newTodo);
-    // 
+    // todoButton.disabled = true;
+    const clone = template.content.cloneNode(true);
+
+    const task = clone.querySelector('.task');
+    const container = clone.querySelector('.todo');
+    const taskText = clone.querySelector('.todo-item');
+    taskText.innerText = todoInput.value;
     saveLocalTodos(todoInput.value);
-    // create check button
-    const completedButton = document.createElement('button');
-    completedButton.innerHTML = '<i class="fas fa-check"></i>';
-    completedButton.classList.add("complete-btn");
-    todoDiv.appendChild(completedButton);
-    // create delete button
-    const deleteButton = document.createElement('button');
-    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
-    deleteButton.classList.add("delete-btn");
-    todoDiv.appendChild(deleteButton);
-    // append todoList
-    todoList.appendChild(todoDiv);
+    const complete = clone.querySelector('.complete-btn')
+    const del = clone.querySelector('.delete-btn');
+    todoList.appendChild(clone);
     todoInput.value = "";
+
 
 }
 
@@ -87,25 +75,14 @@ function getTodos() {
         todos = JSON.parse(localStorage.getItem('todos'));
     }
     todos.forEach(function(todo) {
-        const todoDiv = document.createElement("div");
-        todoDiv.classList.add("todo");
-        // create li
-        const newTodo = document.createElement('li');
-        newTodo.innerText = todo;
-        newTodo.classList.add("todo-item");
-        todoDiv.appendChild(newTodo);
-        // create check button
-        const completedButton = document.createElement('button');
-        completedButton.innerHTML = '<i class="fas fa-check"></i>';
-        completedButton.classList.add("complete-btn");
-        todoDiv.appendChild(completedButton);
-        // create delete button
-        const deleteButton = document.createElement('button');
-        deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
-        deleteButton.classList.add("delete-btn");
-        todoDiv.appendChild(deleteButton);
-        // append todoList
-        todoList.appendChild(todoDiv);
+        const clone = template.content.cloneNode(true);
+        const task = clone.querySelector('.task');
+        const container = clone.querySelector('.todo');
+        const taskText = clone.querySelector('.todo-item');
+        taskText.innerText = todo;
+        const complete = clone.querySelector('.complete-btn')
+        const del = clone.querySelector('.delete-btn');
+        todoList.appendChild(clone);
                
     });
 }
