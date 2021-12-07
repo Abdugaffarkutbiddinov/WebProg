@@ -8,9 +8,24 @@
     <link rel="stylesheet" href="CSS/stylesheet.css">
 </head>
 <body>
+  <header class="main-header" id='top-header'>
+    <div class="logo" id="logo">
+        <h1> ABDu </h1>
+    </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="index.html#about-me">Contacts</a>
+        <a href="index.html#app">About</a>
+        <!-- <a href="calculator.html">Calculator</a> -->
+        <a href="todo.html">TOdo</a>
+        <a href="fetch.html">Fetch</a>
+          </nav>
+</header>
   <main>
-    <input type="button" value="New identity" id="get-table-btn">
+    <section class="fetch_container">
+    <input type="button" value="Get Table" id="get-table-btn" class="table-button">
     <img src="images/loading.gif" class="spinner">
+  </section>
     <section class="fetch__table table"></section>
     <template id="header_template">
         <div class="fetch__table__row">
@@ -41,6 +56,18 @@
         </div>
       </template>
    </main>
+   <footer class="footer">
+    <div class="footer-content">
+      <p class="footer-text">follow me on</p>
+    <div class="contact-icon" id="image3">
+      <img class="contact-image"src="images/icon.jpg" />
+     </div>
+     <p class="copyright-info">Copyright © 2021 Kutbiddinov Abdugaffar </p>
+   </div>
+   <div class="load_time"></div>
+</footer>
+    <script src="scripts/currentLocation.js" type="module"></script>
+    <script src="scripts/pageLoadTime.js" type="module"></script>
     <script src="scripts/fetch.js" type="module"></script>
 </body>
 </html>

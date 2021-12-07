@@ -280,7 +280,7 @@ p {
 
 @media screen and (max-width: 1920px) {
   .table {
-    overflow: scroll;
+    /* overflow: scroll; */
     overflow-y: hidden;
   }
 }
@@ -376,6 +376,9 @@ p {
 
 .spinner {
   display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 5%;
 }
 /* Fetch Table */
 
@@ -408,6 +411,24 @@ p {
     align-items: center;
     padding: 5%;
   }
-.get-table-btn {
-  color: #000;
+.fetch_container {
+  min-height: 40vh;
+ text-align: center;
 }
+.table-button {
+  color: #008B8B;
+  background: white;
+  cursor: pointer;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+
+
+.table-button:hover {
+  background: #008B8B;
+  color: white;
+}
+
+
