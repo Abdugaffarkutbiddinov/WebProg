@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Api</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+</head>
+<body>
+  <main>
+    <input type="button" value="New identity" id="get-table-btn">
+    <img src="images/loading.gif" class="spinner">
+    <section class="fetch__table table"></section>
+    <template id="header_template">
+        <div class="fetch__table__row">
+          <div class="fetch__table__cell table__cell table__header">
+            User ID
+          </div>
+          <div class="fetch__table__cell table__cell table__header">
+            ToDo ID
+          </div>
+          <div class="fetch__table__cell table__cell table__header">
+            Title
+          </div>
+          <div class="fetch__table__cell table__cell table__header">
+            Completed
+          </div>
+        </div>
+      </template>
+      <template id="fetch-row">
+        <div class="fetch__table__row">
+          <div class="fetch__table__cell table__cell table__row__userId">
+          </div>
+          <div class="fetch__table__cell table__cell table__row__todoId">
+          </div>
+          <div class="fetch__table__cell table__cell table__row__title">
+          </div>
+          <div class="fetch__table__cell table__cell table__row__completed">
+          </div>
+        </div>
+      </template>
+   </main>
+    <script src="scripts/fetch.js" type="module"></script>
+</body>
+</html>

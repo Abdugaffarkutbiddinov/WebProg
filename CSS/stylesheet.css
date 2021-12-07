@@ -262,14 +262,6 @@ p {
 }
 
 
-/* 
-.complete-btn {
-  background: #008B8B;
-} */
-
-/* .todo-item {
-  padding: 0rem, 0.5rem;
-} */
 
 .checkbox {
   padding-left: 3rem;
@@ -284,10 +276,6 @@ p {
   opacity: 0.5;
 }
 
-/* .fall {
-  transform: translateY(8rem) rotateZ(20deg);
-  opacity: 0;
-} */
 
 
 @media screen and (max-width: 1920px) {
@@ -384,4 +372,42 @@ p {
 .footer {
   background: linear-gradient(#9198e5, #3A3B3C);
   color: white;
+}
+
+.spinner {
+  display: none;
+}
+/* Fetch Table */
+
+.table {
+  width: 90%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  display: grid;
+  margin: 0 3%;
+}
+
+
+.fetch__table__row {
+  display: grid;
+  grid-template-columns: 100px repeat(3, minmax(100px, 1fr));
+}
+.fetch__table__row:nth-last-of-type(odd) {
+  background: #008B8B;
+}
+
+.table__header {
+    background: black;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 5%;
+}
+  .fetch__table__cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+  }
+.get-table-btn {
+  color: #000;
 }
