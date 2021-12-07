@@ -432,3 +432,9 @@ p {
 }
 
 
+.fetch__oops {
+  display: none;
+  font-family: 'Playball','Arial';
+  color: white;
+  text-shadow: 0.2rem 0.2rem 0.4rem #000000;
+}
