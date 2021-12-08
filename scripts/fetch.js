@@ -21,8 +21,12 @@ const btn = document.getElementById("get-table-btn");
         try {
         const response = await fetch( url + complete);
         
-        
-        const data = await response.json();
+        var data = await response.json();
+        }
+        catch(err) {
+            console.log(err);
+            errorMessage.style.display = 'inherit';
+        }
         const header =  document.getElementById('header_template').content.cloneNode(true);
         container.appendChild(header);
         
@@ -40,11 +44,8 @@ const btn = document.getElementById("get-table-btn");
 
             container.appendChild(clone);
         }
-    }
-        catch(err) {
-            console.log(err);
-            errorMessage.style.display = 'inherit';
-        }
+    
+      
 
     };
     btn.onclick = getNewIdentity;
